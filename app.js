@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // creating a HTML element and rendering at id root
 const headingOne = React.createElement(
   "h1",
