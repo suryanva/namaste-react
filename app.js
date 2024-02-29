@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 //JSX is not part of react
 
 // Using core react below is the creation of react element
+// React.createElement => ReactElement-JS Object => HTMLElement(render)
 const firstElement = React.createElement(
   "h1",
   { id: "headingTwo" },
@@ -11,6 +12,9 @@ const firstElement = React.createElement(
 );
 const secondRoot = ReactDOM.createRoot(document.getElementById("root-two"));
 secondRoot.render(firstElement);
+
+// JSX (Transpiled before it reaches the JS)- Babel converts JSX to React.createElent
+// JSX=>React.createElement=>ReactElement-JSObject=>HTMLElement(render)
 
 const jsxElement = (
   <h1 id="headingOne">Welcome to Namastae React using JSX Syntax</h1>
