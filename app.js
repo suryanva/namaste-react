@@ -17,7 +17,9 @@ secondRoot.render(firstElement);
 // JSX=>React.createElement=>ReactElement-JSObject=>HTMLElement(render)
 
 const jsxElement = (
-  <h1 id="headingOne">Welcome to Namastae React using JSX Syntax</h1>
+  <h1 id="headingOne" className="head">
+    Welcome to Namastae React using JSX Syntax
+  </h1>
 ); //JSX SYNTAX to create a react element
 const rootElement = ReactDOM.createRoot(document.getElementById("root"));
 rootElement.render(jsxElement);
