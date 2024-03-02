@@ -43,10 +43,13 @@ const FunctionalComponentTwo = () => {
   return (
     <div>
       <h1>This is Second Functional Component</h1>
+      {FunctionalComponentOne()}
       <FunctionalComponentOne />
+      <FunctionalComponentOne></FunctionalComponentOne>
     </div>
   );
 };
+// FUnctional component can be written as the above 3 ways as Functional component is nothing but a javascript function that return React Element(JSX)
 const oneRoot = ReactDOM.createRoot(document.getElementById("root-four"));
 oneRoot.render(<FunctionalComponentTwo />);
 
@@ -65,3 +68,5 @@ const FunctionalComponentThree = () => (
 );
 
 oneRoot.render(<FunctionalComponentThree />);
+
+// JSX prevents cross site scripting.
